@@ -1,162 +1,115 @@
-# Eliza 🤖
+# LensPoink 🌿
 
 <div align="center">
-  <img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Banner" width="100%" />
+  <h3>Automated Link Generator for Lens Network Ecosystem</h3>
+  <p>Built on the Eliza Framework</p>
+  <p><em>Submission for Lens Network Holiday Hack 2024 🎄</em></p>
 </div>
 
-<div align="center">
+## 🌟 Overview
 
-📖 [Documentation](https://elizaos.github.io/eliza/) | 🎯 [Examples](https://github.com/thejoven/awesome-eliza)
+LensPoink is a specialized Twitter bot that generates direct links for the Lens Network ecosystem services, created as part of the Lens Network Holiday Hack. It simplifies access to key Lens Network testnet services by providing instant, encoded links through simple Twitter commands.
 
-</div>
+It provides instant access to:
 
-## 🌍 README Translations
+- 🌉 Lens Network Bridge
+- 💧 Lens Testnet Faucet
 
-[中文说明](./README_CN.md) | [日本語の説明](./README_JA.md) | [한국어 설명](./README_KOR.md) | [Français](./README_FR.md) | [Português](./README_PTBR.md) | [Türkçe](./README_TR.md) | [Русский](./README_RU.md) | [Español](./README_ES.md) | [Italiano](./README_IT.md) | [ไทย](./README_TH.md) | [Deutsch](./README_DE.md) | [Tiếng Việt](./README_VI.md) | [עִברִית](https://github.com/elizaos/Elisa/blob/main/README_HE.md) | [Tagalog](./README_TG.md) | [Polski](./README_PL.md) | [Arabic](./README_AR.md) | [Hungarian](./README_HU.md) | [Srpski](./README_RS.md)
+## 🎯 Why LensPoink?
 
-## 🚩 Overview
+Built for the Lens Holiday Hack, LensPoink aims to solve a common friction point in the Lens ecosystem by:
+- Simplifying access to essential Lens Network services
+- Providing instant, mobile-friendly links
+- Making the testnet experience smoother for new users
+- Reducing the steps needed to access key Lens infrastructure
 
-<div align="center">
-  <img src="./docs/static/img/eliza_diagram.jpg" alt="Eliza Diagram" width="100%" />
-</div>
+## 🤖 Commands
 
-## ✨ Features
+Simple commands to get direct links:
 
-- 🛠️ Full-featured Discord, Twitter and Telegram connectors
-- 🔗 Support for every model (Llama, Grok, OpenAI, Anthropic, etc.)
-- 👥 Multi-agent and room support
-- 📚 Easily ingest and interact with your documents
-- 💾 Retrievable memory and document store
-- 🚀 Highly extensible - create your own actions and clients
-- ☁️ Supports many models (local Llama, OpenAI, Anthropic, Groq, etc.)
-- 📦 Just works!
+```
+lens bridge -> Get Lens Network Bridge link
+lens faucet -> Get Lens Testnet Faucet link
 
-## Video Tutorials
+many more ecosystem dapps coming soon...
+```
 
-[AI Agent Dev School](https://www.youtube.com/watch?v=ArptLpQiKfI&list=PLx5pnFXdPTRzWla0RaOxALTSTnVq53fKL)
+## 🎯 Features
 
-## 🎯 Use Cases
-
-- 🤖 Chatbots
-- 🕵️ Autonomous Agents
-- 📈 Business Process Handling
-- 🎮 Video Game NPCs
-- 🧠 Trading
-
-## 💰 If you plan to launch a token
-
-This framework is the number one open source project on github, we are enabling the next generation of human-machine interface but we still need your help to ensure the code is of the utmost quality with response rapid to critical issues that will affect our builder community at large.
-
-To ensure sustainable development and continued innovation, we ask contributions of 5-10% of initial token distributions from successful launches.
-
-All contributions are publicly tracked on-chain and used exclusively for ecosystem development.
-
-### ⚠️ Don't forget to tip the big guy 10%: ⚠️
-[AM84n1iLdxgVTAyENBcLdjXoyvjentTbu5Q6EpKV1PeG](https://solscan.io/account/AM84n1iLdxgVTAyENBcLdjXoyvjentTbu5Q6EpKV1PeG)
+- 🔗 Instant URL generation for Lens Network services
+- 🔒 URL-encoded links for security
+- 🤖 Automated Twitter responses
+- 📱 Mobile-friendly links
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- [Python 2.7+](https://www.python.org/downloads/)
-- [Node.js 23+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- [pnpm](https://pnpm.io/installation)
+- Node.js 23+
+- pnpm
+- Twitter Developer Account
 
-> **Note for Windows Users:** [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-manual) is required.
-
-### Use the Starter (Recommended)
-
-```bash
-git clone https://github.com/elizaos/eliza-starter.git
-cd eliza-starter
-cp .env.example .env
-pnpm i && pnpm build && pnpm start
-```
-
-Once the agent is running, you should see the message to run "pnpm start:client" at the end.
-Open another terminal and move to same directory and then run below command and follow the URL to chat to your agent.
-
-```bash
-pnpm start:client
-```
-
-Then read the [Documentation](https://elizaos.github.io/eliza/) to learn how to customize your Eliza.
-
-### Manually Start Eliza (Only recommended if you know what you are doing)
+### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/elizaos/eliza.git
+git clone https://github.com/yourusername/lenspoink.git
 
-# Checkout the latest release
-# This project iterates fast, so we recommend checking out the latest release
-git checkout $(git describe --tags --abbrev=0)
-```
+# Install dependencies
+pnpm install
 
-### Start Eliza with Gitpod
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/elizaos/eliza/tree/main)
-
-### Edit the .env file
-
-Copy .env.example to .env and fill in the appropriate values.
-
-```
+# Configure environment
 cp .env.example .env
-```
 
-Note: .env is optional. If you're planning to run multiple distinct agents, you can pass secrets through the character JSON
-Note: .env is optional. If you're planning to run multiple distinct agents, you can pass secrets through the character JSON
-
-### Automatically Start Eliza
-
-This will run everything to set up the project and start the bot with the default character.
-
-```bash
-sh scripts/start.sh
-```
-
-### Edit the character file
-
-1. Open `packages/core/src/defaultCharacter.ts` to modify the default character. Uncomment and edit.
-
-2. To load custom characters:
-    - Use `pnpm start --characters="path/to/your/character.json"`
-    - Multiple character files can be loaded simultaneously
-3. Connect with X (Twitter)
-    - change `"clients": []` to `"clients": ["twitter"]` in the character file to connect with X
-
-### Manually Start Eliza
-
-```bash
-pnpm i
-pnpm build
+# Start the bot
 pnpm start
-
-# The project iterates fast, sometimes you need to clean the project if you are coming back to the project
-pnpm clean
 ```
 
-#### Additional Requirements
 
-You may need to install Sharp. If you see an error when starting up, try installing it with the following command:
+## 🔧 Technical Details
 
-```
-pnpm install --include=optional sharp
-```
+LensPoink is built on the [Eliza Framework](https://github.com/ai16z/eliza), leveraging its powerful features:
 
-### Community & contact
+- Twitter API integration
+- Automated response handling
+- Secure URL encoding
 
-- [GitHub Issues](https://github.com/elizaos/eliza/issues). Best for: bugs you encounter using Eliza, and feature proposals.
-- [Discord](https://discord.gg/ai16z). Best for: sharing your applications and hanging out with the community.
-- [Developer Discord](https://discord.gg/3f67SH4rXT). Best for: getting help and plugin development.
 
-## Contributors
+## 📖 Documentation
 
-<a href="https://github.com/elizaos/eliza/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=elizaos/eliza" />
-</a>
+For detailed documentation about the underlying framework, visit [Eliza Documentation](https://ai16z.github.io/eliza/)
 
-## Star History
+## 🤝 Contributing
 
-[![Star History Chart](https://api.star-history.com/svg?repos=elizaos/eliza&type=Date)](https://star-history.com/#elizaos/eliza&Date)
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Built on the [Eliza Framework](https://github.com/ai16z/eliza)
+- Powered by Lens Network ecosystem
+- Lens Network for bridge functionality
+- LensScan for faucet services
+
+
+
+### Community Focus
+We aim to simplify the onboarding experience for new Lens users by:
+- Providing one-click access to popular Lens dApps
+- Creating seamless navigation between Lens services
+- Reducing friction in the Web3 social experience
+- Enabling direct interaction with Lens ecosystem from Twitter
+
+Our goal is to make the Lens ecosystem more accessible by bringing its powerful features directly to where users already are - their favorite social platforms.
+
+---
+
+<div align="center">
+  <p>Powered by</p>
+  <a href="https://github.com/ai16z/eliza">
+    <img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Framework" width="200px" />
+  </a>
+</div>
