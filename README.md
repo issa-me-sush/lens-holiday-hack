@@ -1,7 +1,7 @@
 # LensPoink 🌿
 
 <div align="center">
-  <h3>Automated Link Generator for Lens Network Ecosystem</h3>
+  <h3>Dynamic Poink Generator for Lens Network Ecosystem</h3>
   <p>Built on the Eliza Framework</p>
   <p><em>Submission for Lens Network Holiday Hack 2024 🎄</em></p>
 </div>
